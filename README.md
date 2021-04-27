@@ -1,4 +1,4 @@
-# Quick Start
+# React Native Example App for Android - Quick Start
 
 1. Make sure Nodejs, NPM and Yarn are correctly installed:
 
