@@ -25,7 +25,7 @@ yarn -v
 
 
 
-2. Make sure Android adb is correctly installed for connect the nodejs to the device (phisically or emulated). If the device is emulated, be sure you have started the emulator device:
+2. Make sure Android `adb` is correctly installed for connect the Nodejs to the device (physically or emulated). If the device is emulated, be sure you have started the emulator device:
 
 ```bash
 adb devices
