@@ -25,7 +25,7 @@ yarn -v
 
 
 
-2. Make sure Android adb is correctly installed for connect the nodejs to the device (phisically or emulated). If the device is emulated, be sure you have started the emulator device.
+2. Make sure Android adb is correctly installed for connect the nodejs to the device (phisically or emulated). If the device is emulated, be sure you have started the emulator device:
 
 ```bash
 adb devices
@@ -37,7 +37,7 @@ RQ8N80DJYQD     device
 
 
 
-3. Clone this repository
+3. Clone this repository:
 
 ```bash
 git clone https://github.com/roger10cassares/rn_example_app.git
@@ -45,7 +45,7 @@ git clone https://github.com/roger10cassares/rn_example_app.git
 
 
 
-4. Go to this repository
+4. Go to this repository:
 
 ````bash
 cd rn_example_app
@@ -53,7 +53,7 @@ cd rn_example_app
 
 
 
-5. Install the Dependencies
+5. Install the Dependencies:
 
 ````bash
 yarn 
@@ -61,7 +61,7 @@ yarn
 
 
 
-6. Start the Project
+6. Start the Project:
 
 ````bash 
 yarn start
@@ -69,7 +69,7 @@ yarn start
 
 
 
-7. From the same project top level directory, please, open a new `Terminal` and run in android device attached with the `adb devices` command before
+7. From the same project top level directory, please, open a new `Terminal` and run the following command to run the App in the android device attached with the `adb devices` command executed before:
 
 ```bash
 yarn react-native run-android
