@@ -1,4 +1,6 @@
-# Example App with React-Native
+# [Example App with React-Native]
+
+# ----
 
 App created with React Native to manage between Example App for both IOS/Android platforms with React Native. This is a native App!
 
@@ -196,21 +198,21 @@ To organize and be able to scale up the project, please create the following dir
 
 
 
-#### 2.1.1.1. Assets
+#### 2.1.1.1. Api
+
+In `api` directory shall contain logic related to external API communications.
+
+- `src/api/`
+
+
+
+#### 2.1.1.2. Assets
 
 In `assets` directory shall contain all the `fonts` and `images` used in the App Project, i.e., all the structural static files.
 
 - `src/assets/bootsplash`
 - `src/assets/images`
 - `src/assets/fonts`
-
-
-
-#### 2.1.1.2. Api
-
-In `api` directory shall contain logic related to external API communications.
-
-- `src/api/`
 
 
 
@@ -610,11 +612,13 @@ export default App;
 
 
 
-## 2.5. Deploy the App to Release and Generate the APK file
+# 3. React-Native App Release
+
+## 3.1. Deploy the App to Release and Generate the APK file
 
 From: https://reactnative.dev/docs/signed-apk-android
 
-### 2.5.1.  Generating an upload key
+### 3.1.1.  Generating an upload key
 
 - From the top level project directory:
 
@@ -624,7 +628,7 @@ keytool -genkeypair -v -keystore my-upload-key.keystore -alias my-key-alias -key
 
 
 
-### 2.5.2. Setting up Gradle variables
+### 3.1.2. Setting up Gradle variables
 
 - Place the `my-upload-key.keystore` file under the `./android/app` directory in the project folder.
 
@@ -644,7 +648,7 @@ MYAPP_UPLOAD_KEY_PASSWORD=*****
 
 
 
-### 2.5.3. Adding signing configuration to the App's Gradle configuration
+### 3.1.3. Adding signing configuration to the App's Gradle configuration
 
 - The last configuration step that needs to be done is to setup release builds to be signed using `upload key`. Edit the file `./android/app/build.gradle` in the project folder, and add the `signing config`:
 
@@ -675,7 +679,7 @@ android {
 
 
 
-### 2.5.4. Generating the release APK
+### 3.1.4. Generating the release APK
 
 Run the following in any  Terminal:
 
@@ -686,7 +690,7 @@ cd android
 
 
 
-### 2.5.5. Testing the release build of the App
+### 3.1.5. Testing the release build of the App
 
 ```bash
 yarn react-native run-android --variant=release
@@ -694,7 +698,7 @@ yarn react-native run-android --variant=release
 
 
 
-### 2.5.6. APK Released File Location
+### 3.1.6. APK Released File Location
 
 The generated `APK` file for the release from the App shall be located at:
 
