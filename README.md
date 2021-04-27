@@ -1,52 +1,75 @@
 # Quick Start
 
-Make sure Nodejs and NPM are correctly installed:
+1. Make sure Nodejs, NPM and Yarn are correctly installed:
 
 ```bash
 node -v
 ----
+v14.16.0
 ----
 ```
 
 ```bash
 npm -v
 ----
+6.14.8
 ----
 ```
 
-Make sure Android adb is correctly installed for connect the nodejs to the device (phisically or emulated). If the device is emulated, be sure you have started the emulator device.
+```bash
+yarn -v
+----
+1.22.5
+----
+```
+
+
+
+2. Make sure Android adb is correctly installed for connect the nodejs to the device (phisically or emulated). If the device is emulated, be sure you have started the emulator device.
 
 ```bash
 adb devices
 ----
+List of devices attached
+RQ8N80DJYQD     device
 ----
 ```
 
-Clone this repository
+
+
+3. Clone this repository
 
 ```bash
-git clone 
+git clone https://github.com/roger10cassares/rn_example_app.git
 ```
 
-Go to this repository
+
+
+4. Go to this repository
 
 ````bash
-cd
+cd rn_example_app
 ````
 
-Install the Dependencies
+
+
+5. Install the Dependencies
 
 ````bash
 yarn 
 ````
 
-Start the Project
+
+
+6. Start the Project
 
 ````bash 
 yarn start
 ````
 
-Run in android device attached with the adb deevices command before
+
+
+7. Run in android device attached with the adb deevices command before
 
 ```bash
 yarn react-native run-android
