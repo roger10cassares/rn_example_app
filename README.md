@@ -69,7 +69,7 @@ yarn start
 
 
 
-7. Run in android device attached with the adb deevices command before
+7. From the same project top level directory, please, open a new `Terminal` and run in android device attached with the `adb devices` command before
 
 ```bash
 yarn react-native run-android
